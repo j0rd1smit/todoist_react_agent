@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "todoist-react-agent"
+version = "0.1.0"
+description = ""
+authors = ["Jordi Smit <j0rd1smit@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "todoist_react_agent"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+python-dotenv = "^1.0.0"
+openai = "^0.27.7"
+todoist-api-python = "^2.0.2"
+tqdm = "^4.65.0"
+pydantic = "^1.10.8"
+python-dateutil = "^2.8.2"
+requests = "^2.31.0"
+streamlit = "^1.22.0"
+streamlit-chat = "^0.0.2.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
