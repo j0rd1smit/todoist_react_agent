@@ -41,7 +41,8 @@ class GiveFinalAnswerAction(pydantic.BaseModel):
 
     type: Literal["give_final_answer"]
     answer: str = pydantic.Field(
-        description="The final answer to the question.", min_length=3
+        description="The final answer to the question. If you have writen you answer thought, please repeat it here.",
+        min_length=3,
     )
 
 
